@@ -15,3 +15,4 @@ $interval = $interval->format("%H:%I:%S (FULL days: %a)");
     NOGG <?= $interval ?>. tot sinterklaas
 </body>
 </html>
+
