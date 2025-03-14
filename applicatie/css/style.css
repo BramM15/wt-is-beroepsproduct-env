@@ -1,0 +1,543 @@
+:root {
+  --rood: #c12d2b;
+  --grey: #252729;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+header {
+  height: 100vh;
+  padding-top: 90px;
+}
+
+header div {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-image: url("/PIZZA/images/chef-making-pizza-stockcake\ -\ kopie.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+p {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.header_img {
+  height: 200px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--grey);
+  justify-self: center;
+}
+
+.aanbiedingen {
+  margin: 50px 0;
+}
+
+.aanbiedingen_container {
+  display: grid;
+  grid-template: auto auto / auto auto;
+  justify-content: center;
+  gap: 5vw;
+  padding: 50px 150px;
+}
+
+.aanbiedingen_container a {
+  overflow: hidden;
+}
+
+.aanbiedingen_container img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.aanbiedingen_container img:hover {
+  transform: scale(1.2);
+}
+
+.aanbiedingen_img_big {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.menu_container {
+  background-color: var(--grey);
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu_container img {
+  width: 40vw;
+}
+
+.menu_btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_link {
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu_link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #c12d2b;
+  left: 0;
+  top: 110%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.menu_link:hover::after {
+  width: 100%;
+}
+
+.white_text {
+  color: var(--white);
+}
+
+.about {
+  padding: 50px;
+  background-color: var(--rood);
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_main {
+  padding: 165px 0;
+}
+
+.menu_section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 5vw;
+  padding: 50px 0;
+}
+
+.menu_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.menu_article img {
+  width: 100%;
+}
+
+.menu_article_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.menu_article_titel {
+  color: var(--grey);
+  font-size: 1.5rem;
+}
+
+.menu_article_omschrijving {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.menu_article_btn_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.menu_article_prijs {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.menu_article_btn {
+  width: 120px;
+  height: 40px;
+  background-color: var(--rood);
+  color: var(--white);
+  border: solid;
+  border-color: var(--grey);
+  border-radius: 25px;
+  border-width: 1px;
+  transition: 0.4s;
+}
+
+.menu_article_btn:hover {
+  background-color: #972321;
+}
+
+/* Login */
+.login_main {
+  padding: 190px 0 100px 0 ;
+}
+
+.login_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  
+.login_container form div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.registreren_btn_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 25px;
+}
+
+.registreren_btn_container p {
+    color: var(--grey);
+}
+
+.registreren_btn_container a {
+  width: 120px;
+  height: 40px;
+  border: solid;
+  border-color: var(--rood);
+  border-radius: 25px;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.registreren_btn_container a:hover {
+    background-color: var(--rood);
+}
+
+.registreren_btn_container p {
+    font-size: 1rem;
+    align-self: center;
+    color: var(--grey);
+}
+
+
+/* Profiel */
+
+.profiel_header {
+  padding-top: 90px;
+  height: 50vh;
+  align-content: center;
+  background-color: var(--rood);
+}
+
+.profiel_welkom_tekst {
+  color: var(--white);
+}
+
+.profiel_welkom_naam {
+  justify-self: center;
+}
+
+.profiel_main {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+}
+
+.main_nav {
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 25px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+.main_nav a {
+    height: 80px;
+}
+
+.main_nav img {
+    height: 100%;
+}
+
+.nav_list_container {
+display: flex;
+align-items: center;
+height: 100%;
+gap: 25px;
+padding: 0;
+list-style: none;
+overflow: hidden;
+}
+
+.nav_list_content img {
+    height: 20px;
+}
+
+.nav_list_content {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--grey);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav_list_content:hover {
+    color: var(--rood);
+  }
+
+  .menu_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rood);
+    height: 50px;
+    margin-top: 90px;
+  }
+
+  .menu_nav ul {
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+
+.menu_list_content {
+    color: var(--white);
+    text-decoration: none;
+    position: relative;
+}
+
+.menu_list_content::after {
+    content: "";
+    transition: 0.5s;
+    background-color: var(--white);
+    border-radius: 25px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+  }
+  
+  .menu_list_content:hover::after {
+    width: 100%;
+  }
+
+  .hamburger_menu .hamburger_img {
+    height: 70px;
+    padding-top: 25px;
+  }
+
+  .winkelwagen {
+    padding-top: 90px;
+  }
+
+  .winkelwagen table {
+    color: var(--grey);
+  }
+
+  .winkelwagen td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: var(--white);
+  }
+
+  .winkelwagen_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    height: 100vh;
+    background-image: url("/PIZZA/images/Schermafbeelding\ 2024-11-29\ 205000.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.registreren_main {
+    display: flex;
+    justify-content: center;
+    padding-top: 190px;
+    height: 100vh;
+}
+
+.registreren_main form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--white);
+    padding: 0 100px;
+}
+
+footer a {
+    color:  var(--grey);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.privacy_main p{
+    padding: 100px;
+    color: var(--grey);
+}
+
+@media screen and (min-width: 950px) {
+  .hamburger_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+.main_nav {
+    justify-content: space-between;
+}
+
+    .hamburger_menu{ 
+        order: -1;
+        max-height: 90px;
+    }
+
+    .nav_list_container {
+        display: none;
+        border: solid;
+        border-color: var(--rood);
+        border-radius: 25px;
+        border-width: 1px;
+        padding: 25px;
+        max-height: 0;
+        flex-direction: column;
+        background-color: var(--white);
+    }
+
+    .hamburger_menu:hover .nav_list_container {
+        display: flex;
+        height: fit-content;
+        max-height: fit-content;
+      }
+
+  .menu_container {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  /* header */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin: 0 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    order: 1;
+  }
+
+  /* aanbiedingen */
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .aanbiedingen_container {
+    grid-template: none;
+    padding: 50px;
+  }
+
+  .aanbiedingen_img_big {
+    grid-column: auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .menu_section {
+    grid-template-columns: auto auto;
+  }
+
+  .menu_article_text_container p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .menu_article {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .menu_section {
+    grid-template-columns: auto;
+  }
+
+  .menu_article {
+    width: 70vw;
+  }
+
+  .privacy_main p{
+    padding: 50px;
+}
+}
