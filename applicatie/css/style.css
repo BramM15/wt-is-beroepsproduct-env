@@ -23,7 +23,7 @@ header div {
   position: absolute;
   width: 100%;
   height: calc(100vh - 90px);
-  background-image: url("/PIZZA/images/chef-making-pizza-stockcake\ -\ kopie.png");
+  background-image: url("/images/chef-making-pizza-stockcake-kopie.png");
   background-size: cover;
   background-position: center;
   z-index: -1;

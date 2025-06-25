@@ -30,7 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productnaam'])) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,10 +41,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productnaam'])) {
 </head>
 
 <body>
-  <nav class="main_nav">
+  <?php require_once("shared/nav.php");
+  ?>
+  <!-- <nav class="main_nav">
     <a href="index.php#header"><img src="images/logo.png" alt="" /></a>
     <div class="hamburger_menu">
-      <img class="hamburger_img" src="icons/bars-solid.svg" alt="" />
+      <img class="hamburger_img" src="images\icons\hamburger-menu-32.png" alt="" />
       <ul class="nav_list_container">
         <li>
           <a class="nav_list_content" href="index.php#aanbiedingen">aanbiedingen<img src="icons/tag-solid.svg" alt="" />
@@ -69,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productnaam'])) {
       </ul>
     </div>
     <a href="Login.php"><img src="images/Profiel.png" alt="" /></a>
-  </nav>
+  </nav> -->
 
   <nav class="menu_nav">
     <ul>
