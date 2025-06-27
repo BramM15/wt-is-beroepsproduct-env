@@ -27,7 +27,7 @@ if (!defined('IN_PAGINA')) {
         </div>
         <div>
           <label for="wachtwoord">wachtwoord</label>
-          <input type="wachtwoord" name="wachtwoord" id="wachtwoord" required />
+          <input type="passqord" name="wachtwoord" id="wachtwoord" required />
         </div>
         <input type="submit" name="inloggen" value="Inloggen" />
       </form>

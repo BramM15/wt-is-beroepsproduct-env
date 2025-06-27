@@ -1,5 +1,4 @@
 <?php
-
 if (!defined("IN_PAGINA")) {
     Header('Location: /');
     exit;

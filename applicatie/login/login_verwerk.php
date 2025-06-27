@@ -1,8 +1,6 @@
 <?php
 define('IN_PAGINA', true);
 
-print($_SERVER['DOCUMENT_ROOT']);
-
 require_once($_SERVER['DOCUMENT_ROOT'] . "/db_connectie.php");
 $db = maakVerbinding();
 require_once($_SERVER['DOCUMENT_ROOT'] . "/shared/data/data.php");
