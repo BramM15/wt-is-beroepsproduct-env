@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li>
-                <a class="nav_list_content" href="winkelwagen.php">order now
+                <a class="nav_list_content" href="winkelwagen.php">winkelwagen
                     <img src="icons/cart-shopping-solid.svg" alt="" />
                 </a>
             </li>
